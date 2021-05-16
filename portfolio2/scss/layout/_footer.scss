@@ -1,0 +1,43 @@
+.footer {
+    background-color: cl(primary);
+    border: 1px solid #e5e5e5;
+}
+.footer-wrap {
+    text-align: center;
+    color: cl(white);
+    padding-top: 30px;
+    @include overTab {
+        padding-top: 0;
+    }
+}
+.footer-list {
+    @include overTab {
+    display: flex;
+    justify-content: center;
+    }
+    .footer-item {
+        padding-top: 20px;
+        @include overTab {
+        padding-top: 60px;
+        }
+        +.footer-item {
+            @include overTab {
+            margin-left: 50px;
+            }
+        }
+        a {
+            color: cl(white);
+        }
+    }
+
+}
+.footer-logo {
+    width: 188px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.copyright {
+    padding-bottom: 40px;
+    font-size: 16px;
+}

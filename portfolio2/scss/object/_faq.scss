@@ -1,0 +1,33 @@
+.faq {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    .faq-cont {
+        margin-left: 0;
+        margin-right: 0;
+        @include overTab {
+        margin-left: percentage(230/1366);
+        margin-right: percentage(230/1366);
+        }
+    }
+    .faq-list {
+    }
+    .faq-item {
+        &:nth-child(2) {
+            text-align: center;
+        }
+        .question {
+            display: block;
+            background-color: cl(white);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .answer {
+            background-color: cl(lightgrey);
+            padding: 25px 50px;
+            border-bottom: 1px solid #e5e5e5;
+            display: none;
+        }
+    }
+}

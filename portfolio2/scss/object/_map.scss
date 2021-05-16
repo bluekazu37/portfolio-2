@@ -1,0 +1,14 @@
+.map-wrap {
+    .map {
+        p {
+            text-align: center;
+            color: cl(grey);
+        }
+        .map-item {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 50px;
+        }
+    }
+}

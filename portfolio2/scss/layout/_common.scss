@@ -1,0 +1,42 @@
+.cmn-section {
+    &.-black {
+        background-color: #FFE4C4;
+    }
+
+}
+.cmn-title {
+    color: cl(black);
+    text-align: center;
+    .main {
+        display: block;
+        font-size: 32px;
+    }
+    .sub {
+        display: block;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        @include TimesNewRoman;
+        &.-faq {
+            text-transform: uppercase;
+        }
+        @include overTab {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.button {
+    a {
+        color: cl(black);
+        background: linear-gradient(to bottom right, orange, yellow);
+        display: flex;
+        width: 155px;
+        height: 37px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+}

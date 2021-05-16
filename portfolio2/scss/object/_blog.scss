@@ -1,0 +1,50 @@
+.blog {
+    padding-top: 60px;
+}
+.blog-cont {
+    margin-left: 60px;
+    margin-right: 60px;
+    @include overTab {
+    margin-left: 110px;
+    margin-right: 110px;
+    }
+}
+.blog-list {
+    color: cl(white);
+    .row {
+        display: flex;
+        +.row {
+            margin-top: 30px;
+        }
+    }
+    dt {
+        font-size: 14px;
+        width: 92px;
+        height: 32px;
+        background-color: cl(primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        @include overTab {
+            width: 157px;
+            margin-right: 20px;
+        }
+    }
+    dd {
+        flex: 1;
+        a {
+            color: cl(grey);
+            font-size: 24px;
+            text-decoration: underline;
+        }
+
+    }
+}
+.blog-link {
+    margin-top: 70px;
+    a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

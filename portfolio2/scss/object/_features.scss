@@ -1,0 +1,85 @@
+.features {
+  padding-top: 54px;
+  @include overTab {
+    padding-top: 80px;
+  }
+  .inner {
+
+  }
+  .features-contents {
+  }
+  .features-list {
+  }
+  .features-item {
+    color: cl(grey);
+    display: flex;
+    flex-flow: column-reverse;
+    +.features-item {
+      padding-top: 70px;
+      @include overTab {
+        padding-top: 0;
+      }
+    }
+    &:nth-child(odd) {
+      @include overTab {
+        flex-flow: row-reverse;
+      }
+      .image {
+        @include overTab {
+          margin-right: 55px;
+        }
+      }
+      .text {
+        @include overTab {
+          margin-right: 70px;
+        }
+      }
+    }
+    &:nth-child(even) {
+      @include overTab {
+        flex-flow: row;
+      }
+      .image {
+        @include overTab {
+          margin-left: 55px;
+        }
+      }
+      .text {
+        @include overTab {
+          margin-left: 70px;
+        }
+      }
+    }
+    .text {
+      margin-left: 90px;
+      margin-right: 90px;
+      @include overTab {
+        flex: 1;
+        margin-left: 0;
+        margin-right: 0;
+        }
+      .title {
+        color: cl(dimgray);
+        font-size: 28px;
+        margin-top: 40px;
+      }
+      .description {
+        font-size: 18px;
+        margin-top: 30px;
+      }
+      .button {
+          margin-top: 40px;
+          margin-bottom: 30px;
+          a {
+              margin-left: auto;
+              margin-right: auto;
+          }
+      }
+    }
+    .image {
+      @include overTab {
+        width: percentage(683/1366);
+      }
+    }
+  }
+}
